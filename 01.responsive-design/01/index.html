@@ -1,0 +1,45 @@
+<html>
+ <head>
+ 	<title></title>
+ 	<style type="text/css">
+ 	.container {
+ 		width: 100%;
+ 		display: flex;
+ 		flex-wrap:wrap;
+ 	}
+ 	.box {
+ 		width: 150px; min-height: 100px
+ 	}
+	.dark_blue {
+	background-color: aqua;
+	}
+	.light_blue {
+	background-color: blue;
+	}
+	.green {
+	background-color: green;
+
+	}
+
+	@media (min-width: 400px) {
+		.dark_blue {
+			order:2;
+		}
+		.light_blue {
+			order:3;
+		}
+		.green {
+			order:1;
+		}
+	}
+ 	</style>
+ </head>
+ <body>
+ 	<div class="container">
+ 		<div class="box dark_blue"></div>
+ 		<div class="box light_blue"></div>
+ 		<div class="box green"></div>
+ 	</div>
+
+ </body>
+ </html> 
